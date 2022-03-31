@@ -4,6 +4,8 @@ export const API_KEY = process.env.REACT_APP_API_KEY;
 export const WS_URL = process.env.REACT_APP_WS_URL;
 export const SSE_URL = process.env.REACT_APP_SSE_URL;
 
+export const _DT_FMT_DB = "MM-DD-YYYY HH:mm:ss";
+
 export const AUTHENTICITY_PRIVATE_URL = process.env.REACT_APP_AUTHENTICITY_PRIVATE_URL;
 export const AUTHENTICITY_PUBLIC_URL = process.env.REACT_APP_AUTHENTICITY_PUBLIC_URL;
 

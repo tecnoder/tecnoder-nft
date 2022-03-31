@@ -1,55 +1,50 @@
-export const createUserUrl = () => '/user-management/create-user-one-step';
-export const loginUrl = () => '/user-management/login';
-export const getSessionUserUrl = () => '/user-management/get-session-user';
-export const getUserDetailsUrl = () => '/rest/user/get-user-details';
-export const verifyUserUrl = (vid: string) => `/user-management/verify-user-one-step?vid=${vid}`
+export const createUserUrl = "/user-management/create-user"
+export const verifyUserUrl = (vid: string) => `/user-management/verify-user?vid=${vid}`
+export const registerUserUrl = "/user-management/register-user"
+export const loginUrl = "/user-management/login"
+export const getSessionUserUrl = "/user-management/get-session-user"
+export const resetPasswordUrl = '/user-management/reset-password';
 export const sendResetPasswordVerificationEmailUrl = (emailId: string) => `/user-management/send-reset-password-verification-email?emailId=${emailId}`;
 export const reSendRegistrationEmailUrl = (emailId: string) => `/user-management/re-send-registration-email?emailId=${emailId}`;
 export const verifyResetPasswordUrl = (vid: string) => `/user-management/verify-reset-password?vid=${vid}`;
-
+export const getQR = "/user-management/get-qr";
+export const changeTwoFactorAuthenticationUrl = "/user-management/change-two-factor";
 export const validateTotpUrl = "/user-management/validate-totp";
 
+export const logoutUrl = "/user-management/sign-out"
+export const updateUserDetailsUrl = "/rest/user/update-user-details"
 
-export const getDropTypeUrl = () => '/public/get-drop-type';
-export const getContentCreatorTypeUrl = () => '/public/getContentCreatorType';
-export const getNftPlatformTypeUrl = () => '/public/getNftPlatformType';
-export const getAllCOntentCreatorUrl = () => '/public/getAllContentCreator';
-export const getDropByDropId = (param: any) => `/public/get-drop-by-drop-id/?dropId=${param}`;
-export const getTopDrops = (pageNumber:any, pageSize:any) => `/public/get-packs-and-drops-for-sale?pageNumber=${pageNumber}&pageSize=${pageSize}`;
-export const getAllTokensForSaleUrl = () => '/public/get-tokens-on-sale';
-export const getSecondaryMarketHistoryUrl = (pageNumber:any, pageSize:any) => `/public/getSecondaryMarketHistory?pageNumber=${pageNumber}&pageSize=${pageSize}`;
-export const getBiddingHistoryUrl = (id: any) => `/public/getBiddingHistory?dropId=${id}`;
-export const getTokensForSaleByTokenIdUrl = (id: any) => `/public/getTokensForSaleByTokenId?tokenId=${id}`;
-export const getTokenHistoryUrl = (id: any) => `/public/get-token-history?platformTokenId=${id}`;
-export const getCoinListUrl = () => `/public/getCoinDetails`;
-export const isValidateAddressUrl = (address: any, addressType: any) => `/public/isValidateAddress?address=${address}&addressType=${addressType}`;
+export const getAthleteRolesUrl = "/public/get-athlete-roles";
+export const getNftPlatformTypesUrl = "/public/getNftPlatformType";
+export const getAllAthleteUrl = "/public/getAllAthlete";
+export const contactUsUrl = "/public/contact-us";
+export const getAthleteByIdUrl = (athleteId:number) => `/public/getAthleteById?athleteId=${athleteId}`;
 export const searchByUserProfileUrl = (profileName:string) => `/public/search-users-by-profile?profileName=${profileName}`;
+export const subscribeUrl = (emailId:string, status: string) => `/public/subscribe?emailId=${emailId}&status=${status}`;
+export const getPackAndDropsForSaleUrl = (pgNo:number, pgSize: number) => `/public/get-packs-and-drops-for-sale?pageNumber=${pgNo}&pageSize=${pgSize}`;
+export const getPackAndDropsForSaleCount = `/public/get-packs-and-drops-for-sale-count`;
 
-export const getSignoutUrl = () => '/rest/user/signOut';
-export const createDropUrl = () => '/rest/admin/createDrop';
-export const createContentCreator = () => '/rest/admin/createContentCreator';
-export const createContentCreatorType = () => '/rest/admin/createContentCreatorType';
-export const getAllCryptoKicksProductLineUrl = () => '/rest/admin/getAllCryptoKicksProductLine';
-export const getMyBalance = (param: string) => `/rest/user/getMyBalance?currency=${param}`;
-export const submitOrder = () => '/rest/order/submitOrder';
-export const getAllMyTokensUrl = () => '/rest/user/getAllMyTokens';
-export const setForSecondarySaleUrl = () => '/rest/user/secondarySale';
-export const cancelSecondarySaleUrl = () => '/rest/user/cancelSecondarySale';
-export const getMyAddressUrl = () => '/rest/user/getMyAddress';
-export const withdrawUrl = () => '/rest/user/withdraw';
+export const createAthleteUrl = "/rest/admin/create-athlete"
+export const getAllAthletesUrl = "/public/get-athletes";
+export const updateAthleteUrl = "/rest/admin/update-athlete";
+export const deleteAthleteUrl = (athleteId:string) =>  '/rest/admin/delete-athlete?athleteId='+athleteId;
+export const getAthleteCollectionsUrl = (athleteId:string) => '/rest/admin/getAthleteConnections?athleteId='+athleteId;
+export const deleteDropUrl = (dropId:string) => '/rest/admin/delete-drop?dropId='+dropId;
 
-export const deleteDropUrl = (dropId : any) => `/rest/admin/deleteDrop?dropId=${dropId}`;
+export const createDropUrl = "/rest/admin/create-drop"
+export const getAvailablePackDropsUrl = "/rest/admin/get-nonpack-drops";
+export const getDropTypesUrl = "/public/get-drop-type";
+export const getNftPlatformTypeUrl = "/public/get-nft-platform-type";
 
-export const getConfigUrl = (configName: string) => `/public/getConfig?configName=${configName}`;
-export const getTokensSaleHistoryUrl = () => `/public/getTokensSaleHistory`;
+export const createPackUrl = "/rest/admin/create-pack";
+export const deletePackUrl = (dropId:string) => '/rest/admin/delete-pack='+dropId;
 
-export const getTokenDateMintedAndTransHashUrl = (id: any) => `/public/getTokenDateMintedAndTransHash?tokenId=${id}`;
-export const resetPasswordUrl = () => '/auth/resetPassword';
+export const getUserDetailsURL = "/rest/user/get-user-details";
+export const getAllMyTokensURL = "/rest/user/get-my-tokens";
+export const getMyTokenHistoryUrl = "/rest/user/get-my-token-history";
+export const sellTokenUrl = "/rest/user/sell-token";
+export const cancelSecondarySaleUrl = "/rest/user/cancel-secondary-sale";
 
-export const getAllMyExternalTokensUrl = ()=>'/rest/user/getAllMyExternalTokens';
-
-export const updateUserBalanceUrl = () => '/rest/user/depositUsd';
-export const getCallApiUrl = () => '/exapi/map/callApi';
-
-export const insertExternalTransAuditUrl = ()=> '/rest/user/insertExternalTransAudit';
-export const updateExternalTransAuditUrl = ()=> '/rest/user/updateExternalTransAudit';
+export const getTokensOnSaleUrl = (sortBy: string, sortOrder: string) => `/public/get-tokens-on-sale?sortByType=${sortBy}&sortByOrder=${sortOrder}`;
+export const getTokensOnSaleWithFilterUrl = (pageNumber: number, pageSize: number, sortBy: string, sortOrder: string) => `/public/get-tokens-on-sale-with-filters?pageNumber=${pageNumber}&pageSize=${pageSize}&sortByType=${sortBy}&sortByOrder=${sortOrder}`;
+export const getTokenHistoryUrl = (platformTokenId:string) =>  "/public/get-token-history?platformTokenId="+platformTokenId;
