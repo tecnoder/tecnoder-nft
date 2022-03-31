@@ -1,14 +1,18 @@
 {
-  "name": "@tofusoup429/react-component-module-frame",
-  "version": "0.0.10",
+  "name": "sindric-lib-ui",
+  "version": "1.0.1",
   "description": "React module frame",
-  "homepage": "https://github.com/tofusoup429/react-component-module-frame",
+  "homepage": "https://github.com/tecnoder/tecnoder-nft",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@types/node": "^17.0.21",
     "@types/react": ">=17.0.5",
     "@types/react-dom": ">=17.0.4",
     "@types/styled-components": "^5.1.9",
