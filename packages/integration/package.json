@@ -1,6 +1,6 @@
 {
   "name": "integration",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sindric-lib-ui/commons": "^2.0.0",
-    "@sindric-lib-ui/components": "^2.0.0",
-    "@sindric-lib-ui/endpoints": "^2.0.0",
+    "@sindric-lib-ui/commons": "^2.0.2",
+    "@sindric-lib-ui/components": "^2.0.2",
+    "@sindric-lib-ui/endpoints": "^2.0.2",
     "ts-node": "^7.0.1"
   },
   "gitHead": "08c327e295ccd9d763b1784b27e2575f963cc39b"
