@@ -1,0 +1,19 @@
+{
+  "name": "integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sindric-lib-ui/endpoints": "^0.0.0",
+    "@sindric-lib-ui/components": "^0.0.0",
+    "@sindric-lib-ui/commons": "^0.0.0",
+    "ts-node": "^7.0.1"
+  }
+}
