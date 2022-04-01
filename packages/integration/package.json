@@ -15,5 +15,6 @@
     "@sindric-lib-ui/components": "^2.0.0",
     "@sindric-lib-ui/endpoints": "^2.0.0",
     "ts-node": "^7.0.1"
-  }
+  },
+  "gitHead": "9ece4e0f9be20bf0c1e4ee3824f6999b7064e2c0"
 }

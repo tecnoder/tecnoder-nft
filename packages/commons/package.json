@@ -1,5 +1,5 @@
 {
-  "name": "@sindric-lib-ui/commons",
+  "name": "commons",
   "version": "2.0.0",
   "description": "> TODO: description",
   "author": "Nishit Kamdar <kamdarnishit@gmail.com>",
@@ -27,5 +27,6 @@
   },
   "bugs": {
     "url": "https://github.com/tecnoder/tecnoder-nft/issues"
-  }
+  },
+  "gitHead": "9ece4e0f9be20bf0c1e4ee3824f6999b7064e2c0"
 }
