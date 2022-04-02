@@ -2,6 +2,7 @@ import { IValidationRule } from './IValidationRule';
 import { ValidationOptions } from './ValidationOptions';
 
 export * as rules from './rules';
+export * as classes from './classes'
 
 export function validate(target: any, key?:string) {
     // Get the list of properties to validate
