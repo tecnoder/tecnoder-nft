@@ -5,7 +5,7 @@ export const InputField: React.FC<{[key:string]: any}> = ({wrapperClass, type, n
 
     return (
         <div className={`grid-row row-grid column ${wrapperClass}`}>
-            { label && <div className="mb-05">{label}</div>}
+            { label && <div className="mb-05 ip-label">{label}</div>}
             <input type={type} name={name} {...rest} className={(errors!=undefined && errors!=null && Object.keys(errors).length > 0 && (name in errors) ? 'error-field' : '')}/>
             {isErrorExists(errors) && 
                 <div className="error-field-desc">

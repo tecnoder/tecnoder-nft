@@ -44,6 +44,11 @@ export const getAllMyTokensURL = "/rest/user/get-my-tokens";
 export const getMyTokenHistoryUrl = "/rest/user/get-my-token-history";
 export const sellTokenUrl = "/rest/user/sell-token";
 export const cancelSecondarySaleUrl = "/rest/user/cancel-secondary-sale";
+export const getMyBalance = (param: string) => `/rest/user/get-my-balance?currency=${param}`;
+export const getCoinListUrl = () => `/public/get-coin-list`;
+export const getMyAddressUrl = () => '/rest/user/get-my-address';
+export const withdrawUrl = () => '/rest/user/withdraw';
+export const updateUserBalanceUrl = () => '/rest/user/deposit';
 
 export const getTokensOnSaleUrl = (sortBy: string, sortOrder: string) => `/public/get-tokens-on-sale?sortByType=${sortBy}&sortByOrder=${sortOrder}`;
 export const getTokensOnSaleWithFilterUrl = (pageNumber: number, pageSize: number, sortBy: string, sortOrder: string) => `/public/get-tokens-on-sale-with-filters?pageNumber=${pageNumber}&pageSize=${pageSize}&sortByType=${sortBy}&sortByOrder=${sortOrder}`;
