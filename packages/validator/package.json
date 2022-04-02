@@ -1,0 +1,36 @@
+{
+  "name": "@sindric-lib-ui/validator",
+  "version": "3.0.0",
+  "description": "> TODO: description",
+  "author": "Nishit Kamdar <kamdarnishit@gmail.com>",
+  "homepage": "https://github.com/tecnoder/tecnoder-nft#readme",
+  "license": "ISC",
+  "main": "lib/validator.js",
+  "typings": "lib/validator.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecnoder/tecnoder-nft.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/tecnoder/tecnoder-nft/issues"
+  },
+  "gitHead": "cc2bc12b8a3ee103031ac931f544e6874095944e",
+  "dependencies": {
+    "moment": "^2.29.1",
+    "reflect-metadata": "^0.1.13"
+  }
+}
