@@ -9,8 +9,10 @@
       "experimentalDecorators": true,
       "target": "es6",
       "sourceMap": true,
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
       "lib": [
-        "es6"
+        "es6", "DOM"
       ]
     },
     "exclude": [

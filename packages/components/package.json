@@ -28,5 +28,17 @@
   "bugs": {
     "url": "https://github.com/tecnoder/tecnoder-nft/issues"
   },
-  "gitHead": "9ece4e0f9be20bf0c1e4ee3824f6999b7064e2c0"
+  "gitHead": "cc2bc12b8a3ee103031ac931f544e6874095944e",
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "moment": "^2.29.1",
+    "react": "^18.0.0",
+    "react-datepicker": "^4.7.0",
+    "react-icons": "^4.3.1",
+    "react-select": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.43"
+  }
 }
