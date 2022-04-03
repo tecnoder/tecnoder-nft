@@ -39,5 +39,5 @@ export function getUrlParameter(name) {
 export * as api from "./api/api"
 export * as reduxActions from "./redux/actions"
 export * as reduxReducers from "./redux/reducers"
-export * as reduxStore from "./redux/store"
+export {store, useAppDispatch, useAppSelector, AppDispatch} from "./redux/store"
 export * as reduxSlices from "./redux/slices"
