@@ -28,5 +28,12 @@
   "bugs": {
     "url": "https://github.com/tecnoder/tecnoder-nft/issues"
   },
-  "gitHead": "cc2bc12b8a3ee103031ac931f544e6874095944e"
+  "gitHead": "cc2bc12b8a3ee103031ac931f544e6874095944e",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "@sindric-lib-ui/endpoints": "^4.0.1",
+    "axios": "^0.26.1",
+    "moment": "^2.29.1",
+    "react-redux": "^7.2.8"
+  }
 }

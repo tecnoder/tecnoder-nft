@@ -27,9 +27,17 @@ export function getAge(dateString: any) {
     return age;
 }
 
+export const clearAllValue = () => localStorage.clear();
+
 export function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
     var results = regex.exec(document.location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
+
+export * as api from "./api/api"
+export * as reduxActions from "./redux/actions"
+export * as reduxReducers from "./redux/reducers"
+export * as reduxStore from "./redux/store"
+export * as reduxSlices from "./redux/slices"
