@@ -43,8 +43,6 @@ export const ScanQR: React.FC<{[key:string]: any}> = ({name, event, gaSecret}) =
     );
 }
 
-export default ScanQR;
-
 const ScanQRWrapper = styled.div`
     .profile_2fa_qr_wrapper{
         display: flex;
