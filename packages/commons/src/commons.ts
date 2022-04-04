@@ -1,3 +1,5 @@
+import { UserService } from "./api/service";
+
 export const validEmailRegex = new RegExp(/^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i);
 
 export const validUrlRegex = new RegExp(/^(ftp|http|https):\/\/[^ "]+$/);
@@ -35,6 +37,17 @@ export function getUrlParameter(name) {
     var results = regex.exec(document.location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
+
+export const gotoPaymentApp = async (url: string, params: any, actionType: string, user: any) => {
+    const response = await UserService.getSsoToken(Object.assign({
+        successUrl: window.location.origin + url,
+        cancelUrl: window.location.origin + url
+    }, params));
+    if (response && response.status === "SUCCESS") {
+        window.location.href = `${process.env.REACT_APP_PAYMENT_URL}/sso/${actionType}?d=${response.data}`;
+    }
+    return response;
+}
 
 export * as api from "./api/api"
 export * as reduxActions from "./redux/actions"
