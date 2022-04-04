@@ -3,3 +3,7 @@ export function isErrorExists(errorObject: any){
 }
 
 export const _DT_FMT_DB = "MM-DD-YYYY HH:mm:ss";
+
+export function isLoggedIn(user: any){
+    return !!(user && user.jwtId);
+}
