@@ -72,3 +72,5 @@ export const getData = async (url: string, data?: any) => {
         // }
     }
 };
+
+export * as services from './service'
