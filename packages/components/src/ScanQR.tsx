@@ -23,7 +23,7 @@ export const ScanQR: React.FC<{[key:string]: any}> = ({name, event, gaSecret}) =
                     <table className="profile_2fa_manual_table">
                         <tbody>
                             <tr className={`profile_2fa_manual_row`}><td className="light-intro">ACCOUNT:</td></tr>
-                            <tr className={`profile_2fa_manual_row`}><td>{{name}}</td></tr>
+                            <tr className={`profile_2fa_manual_row`}><td>{name}</td></tr>
                             <tr className={`profile_2fa_manual_row`}><td className="light-intro">GA SECRET:</td></tr>
                             <tr className={`profile_2fa_manual_row`}><td>{gaSecret}</td></tr>
                         </tbody>
