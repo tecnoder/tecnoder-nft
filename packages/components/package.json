@@ -38,6 +38,7 @@
     "@sindric-lib-ui/validator": "^8.0.0",
     "moment": "^2.29.1",
     "react": "^17.0.2",
+    "react-country-region-selector": "^3.4.0",
     "react-datepicker": "^4.7.0",
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.2.0",
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.43",
+    "@types/react-datepicker": "^4.3.4",
     "@types/react-router-dom": "^5.1.8",
     "@types/styled-components": "^5.1.24"
   },
