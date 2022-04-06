@@ -3,7 +3,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import { RegionDropdown } from 'react-country-region-selector';
 
-export const States: React.FC<{[key:string]: any}> = ({value, errors, country, stateError, onChange, ...rest}) => {
+export const States: React.FC<{[key:string]: any}> = ({value, country, stateError, onChange, ...rest}) => {
 
     return (
         <>
