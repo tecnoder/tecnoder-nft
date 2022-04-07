@@ -1,5 +1,7 @@
 export const createUserUrl = "/user-management/create-user"
+export const createUserOneStepUrl = '/user-management/create-user-one-step';
 export const verifyUserUrl = (vid: string) => `/user-management/verify-user?vid=${vid}`
+export const verifyUserOneStepUrl = (vid: string) => `/user-management/verify-user-one-step?vid=${vid}`
 export const registerUserUrl = "/user-management/register-user"
 export const loginUrl = "/user-management/login"
 export const getSessionUserUrl = "/user-management/get-session-user"
