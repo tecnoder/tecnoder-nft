@@ -5,7 +5,7 @@ import ReactCodeInput from 'react-code-input';
 import { postData } from '@sindric-lib-ui/commons/lib/api/api';
 
 import Countdown from "react-countdown";
-import { reSendRegistrationEmailUrl, verifyResetPasswordUrl, verifyUserUrl } from '@sindric-lib-ui/endpoints';
+import { reSendRegistrationEmailUrl, verifyResetPasswordUrl, verifyUserOneStepUrl, verifyUserUrl } from '@sindric-lib-ui/endpoints';
 import { useAppDispatch } from '@sindric-lib-ui/commons/lib/redux/store';
 import { removeLoader, setLoader } from '@sindric-lib-ui/commons/lib/redux/slices/loader';
 import Message from './Message';
@@ -65,7 +65,7 @@ export const Verification: React.FC<{[key:string]: any}> = ({wrapperClass, email
                 response = await postData(verifyResetPasswordUrl(verificationCode));
             }
             else{
-                response = await postData(verifyUserUrl(verificationCode));
+                response = await postData(verifyUserOneStepUrl(verificationCode));
             }
             if(response.status === "SUCCESS"){
                 parentCallback("verified");
