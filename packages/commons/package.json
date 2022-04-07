@@ -1,6 +1,6 @@
 {
   "name": "@sindric-lib-ui/commons",
-  "version": "8.2.0",
+  "version": "8.7.0",
   "description": "> TODO: description",
   "author": "Nishit Kamdar <kamdarnishit@gmail.com>",
   "homepage": "https://github.com/tecnoder/tecnoder-nft#readme",
@@ -31,7 +31,7 @@
   "gitHead": "cc2bc12b8a3ee103031ac931f544e6874095944e",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
-    "@sindric-lib-ui/endpoints": "^8.0.0",
+    "@sindric-lib-ui/endpoints": "^8.7.0",
     "axios": "^0.26.1",
     "moment": "^2.29.1",
     "react-redux": "^7.2.8"
