@@ -9,6 +9,7 @@ import { reSendRegistrationEmailUrl, verifyResetPasswordUrl, verifyUserUrl } fro
 import { useAppDispatch } from '@sindric-lib-ui/commons/lib/redux/store';
 import { removeLoader, setLoader } from '@sindric-lib-ui/commons/lib/redux/slices/loader';
 import Message from './Message';
+import { Button } from './button';
 
 const codeProps: any = {
     inputStyle: {
@@ -155,15 +156,9 @@ export const Verification: React.FC<{[key:string]: any}> = ({wrapperClass, email
         <>
             <p className="mt-2">
                 Account has been verified{" "}
-                <a
-                    href="#"
-                    onClick={ev => {
-                        ev.preventDefault()
-                        goToPage(`${window.location.pathname}?isSignin=true`)
-                    }}
-                >
-                    Sign in
-                </a>
+                <div onClick={goToPage}>
+                    <Button type="primary" aria-disabled>SIGN IN</Button>
+                </div>
             </p>
         </>
         }
