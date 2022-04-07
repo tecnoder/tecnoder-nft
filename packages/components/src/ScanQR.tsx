@@ -2,6 +2,7 @@ import { getQR } from '@sindric-lib-ui/endpoints';
 import React from 'react';
 
 import styled from 'styled-components'
+import { Button } from './button';
 
 export const ScanQR: React.FC<{[key:string]: any}> = ({name, event, gaSecret}) => {
     return(
@@ -30,13 +31,7 @@ export const ScanQR: React.FC<{[key:string]: any}> = ({name, event, gaSecret}) =
                     </table>
                 </div>
                 <div className={`profile_2fa_submit-button mt-3`} onClick={event}>
-                    <button
-                        type="button"
-                        className={`btn btn-sm btn-black mt-2`}
-                        onClick={(ev) => event()}
-                    >
-                        Next
-                    </button>
+                    <Button type="primary">Next</Button>
                 </div>
             </div>
         </ScanQRWrapper>
@@ -53,7 +48,7 @@ const ScanQRWrapper = styled.div`
             color: var(--font-color);
             line-height: 2rem;
             padding-top: 2rem;
-            font-size: 1.67rem;            
+            font-size: 1rem;            
             letter-spacing: .1em;
             text-align: left;
         }
@@ -62,6 +57,7 @@ const ScanQRWrapper = styled.div`
         margin: 0 auto;
         border: 1px solid;
         padding: 0;
+        width: 60%;
         border-collapse: collapse;
         tr{
             border: 1px solid;

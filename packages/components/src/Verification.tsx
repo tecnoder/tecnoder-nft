@@ -152,6 +152,7 @@ export const Verification: React.FC<{[key:string]: any}> = ({wrapperClass, email
             <div className="mt-3 signup-success-text">We have sent an email with 7 digit verification code. <br/> Please enter below</div>
             <ReactCodeInput className={`mt-2 mb-2 ${wrapperClass}`} onChange={(e) => handleVid(e)} name='code-input' type='text' fields={7} {...codeProps}/>
             <Countdown key={countDownKey} date={refContainer.current} renderer={renderer} />
+            {resendCodeTemplate}
         </> : 
         <>
             <p className="mt-2">
