@@ -68,7 +68,7 @@ export const Verification: React.FC<{[key:string]: any}> = ({wrapperClass, email
                 response = await postData(verifyUserOneStepUrl(verificationCode));
             }
             if(response.status === "SUCCESS"){
-                parentCallback("verified");
+                parentCallback(response.data);
                 setVerifying(false);
                 if(type !== 'resetPassword'){
                     setVerified(true);
