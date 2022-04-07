@@ -73,7 +73,7 @@ export const VerifyTotp: React.FC<{[key:string]: any}> = ({onSuccess, onError}) 
             <InputField wrapperClass="mb-1" type="text" name="verifyCode" placeholder="Two factor authentication code" value={verifyCode} errors={errors} onChange={(e:any)=>setVerifyCode(e.target.value)}/>
         </div>
         <div className={`verify_code_button`} onClick={(ev) => verifyTotp(ev)}>
-            <Button type="Primary"></Button>
+            <Button type="primary"></Button>
         </div>
     </form>
     </>
