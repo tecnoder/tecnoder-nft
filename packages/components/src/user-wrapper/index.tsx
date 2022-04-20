@@ -3,7 +3,7 @@ import { useAppSelector } from '@sindric-lib-ui/commons';
 import { postData } from '@sindric-lib-ui/commons/lib/api/api';
 import { getUserDetailsURL } from '@sindric-lib-ui/endpoints';
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 
 export const UserWrapper: React.FC = ({children}) => {
 
