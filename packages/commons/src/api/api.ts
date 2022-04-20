@@ -73,4 +73,6 @@ export const getData = async (url: string, data?: any) => {
     }
 };
 
+export const cancelTokenSource = () => axios.CancelToken.source();
+
 export * as services from './service'
