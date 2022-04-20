@@ -30,6 +30,7 @@ import FileInputField from "../fileinputfield";
 import InputField from "../InputField";
 import { DateTimeField, SelectField } from "../components";
 import { Button } from "../button";
+import UserWrapper from "../user-wrapper";
 // import { setLoader, removeLoader } from "redux/slices/loader";
 // import UserWrapper from "../user-wrapper";
 // import Layout3 from "pages/layout-3";
@@ -730,12 +731,16 @@ const CreateAthelete: React.FC<{[key:string]: any}> = () => {
 
     if(toUpdate && isAthleteLoaded){
         return (
-            content
+            <UserWrapper>
+                {content}
+            </UserWrapper>
         );
     }
     else if(!toUpdate){
         return (
-            content
+            <UserWrapper>
+                {content}
+            </UserWrapper>
         ); 
     }
     else{

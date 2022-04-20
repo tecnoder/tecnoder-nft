@@ -15,6 +15,7 @@ import { Button } from "../button";
 import { DateTimeField, MultiSelectField, SelectField, TextareaField } from "../components";
 import FileInputField from "../fileinputfield";
 import InputField from "../InputField";
+import UserWrapper from "../user-wrapper";
 import { YMD_TIME_FMT } from "../utility";
 // import { createPackUrl, getDropTypesUrl, getAvailablePackDropsUrl, getNftPlatformTypeUrl } from "helper/api/api-endpoints";
 // import CheckboxField from "components/scss/elements/checkboxfield/CheckboxField";
@@ -563,7 +564,9 @@ const CreatePack: React.FC = () => {
     );
 
     return (
-        content
+        <UserWrapper>
+        {content}
+        </UserWrapper>
     );
 };
 

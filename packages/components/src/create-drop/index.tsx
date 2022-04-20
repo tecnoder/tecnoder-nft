@@ -12,6 +12,7 @@ import FileInputField from "../fileinputfield";
 import InputField from "../InputField";
 import { DateTimeField, MultiSelectField, SelectField, TextareaField } from "../components";
 import { Button } from "../button";
+import UserWrapper from "../user-wrapper";
 // import UserWrapper from "../user-wrapper";
 // import Layout3 from "pages/layout-3";
 
@@ -909,7 +910,9 @@ const CreateDrop: React.FC = () => {
     );
 
     return (
-        content
+        <UserWrapper>
+            {content}
+        </UserWrapper>
     );
 };
 
