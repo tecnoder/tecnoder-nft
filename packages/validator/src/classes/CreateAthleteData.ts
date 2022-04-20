@@ -1,5 +1,4 @@
-import { Required } from "helper/validation/rules/Required";
-import { IsValidUrl } from "helper/validation/rules/IsValidUrl";
+import { Required } from "../rules";
 
 export class CreateAthleteData {
 
