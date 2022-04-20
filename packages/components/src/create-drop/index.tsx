@@ -909,11 +909,7 @@ const CreateDrop: React.FC = () => {
         </div>
     );
 
-    return (
-        <UserWrapper>
-            {content}
-        </UserWrapper>
-    );
+    return content;
 };
 
 export default CreateDrop;
