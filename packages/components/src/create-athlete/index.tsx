@@ -730,18 +730,10 @@ const CreateAthelete: React.FC<{[key:string]: any}> = () => {
     );
 
     if(toUpdate && isAthleteLoaded){
-        return (
-            <UserWrapper>
-                {content}
-            </UserWrapper>
-        );
+        return content;
     }
     else if(!toUpdate){
-        return (
-            <UserWrapper>
-                {content}
-            </UserWrapper>
-        ); 
+        return content; 
     }
     else{
         return (
