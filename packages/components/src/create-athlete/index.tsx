@@ -490,7 +490,7 @@ const CreateAthelete: React.FC<{[key:string]: any}> = () => {
     }
 
     const content = (
-        <div className={`${`form_wrapper_2`} form_wrapper`}>
+        <div className={`${`form_wrapper_2`} create_drop_form form_wrapper`}>
             <h1 className="form_heading">Create Athlete</h1>
             <div className={`form_container mt-3`}>
                 <form onSubmit={handleSubmit}>
