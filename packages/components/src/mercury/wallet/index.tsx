@@ -30,7 +30,7 @@ import { Button } from "../../button";
 // import {getCoinList} from "redux/slices/misc/coinList";
 
 
-const Wallet: React.FC<{[key:string]: any}> = ({userData}) => {
+export const Wallet: React.FC<{[key:string]: any}> = ({userData}) => {
 
     let { url } = useRouteMatch();
     const {user, myCurrencies, coinList} = useAppSelector((state) => state);
@@ -293,5 +293,3 @@ const Wallet: React.FC<{[key:string]: any}> = ({userData}) => {
     )
     
 }
-
-export default Wallet;

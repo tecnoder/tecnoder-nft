@@ -9,7 +9,7 @@ import React, { useEffect, useState } from 'react';
 import ReactTooltip from 'react-tooltip';
 
 import Switch from "react-switch";
-import { useHistory, useLocation } from 'react-router';
+import { useHistory, useLocation } from 'react-router-dom';
 import { Button } from '../../button';
 import InputField from '../../InputField';
 import Message from '../../Message';
@@ -367,5 +367,3 @@ export const SecuritySettings: React.FC<{[key:string]: any}> = ({showQRScanSecti
         </>
   );
 };
-
-export default SecuritySettings;

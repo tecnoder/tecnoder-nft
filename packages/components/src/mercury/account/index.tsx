@@ -372,5 +372,3 @@ export const AccountSettings: React.FC<{[key:string]: any}> = ({userData}) => {
     );
 
 };
-
-export default AccountSettings;
