@@ -35,6 +35,7 @@ export const postData = async (url: string, data?: any, options?: any, noauth?: 
         options.headers = options.headers||{};
         if(user){
             options.headers['AUTH_TOKEN'] = user.jwtId;
+            options.headers['OWASP_CSRFTOKEN'] = user.jwtId;
         }
         let response: any;
         if(noauth){
