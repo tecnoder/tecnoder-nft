@@ -10,8 +10,9 @@ import athletes from "./slices/athletes";
 import topDrops from "./slices/topdrops";
 import kycStatus from "./slices/kycstatus";
 import myCurrencies from "./slices/user/myCurrencies";
+import theme from "./slices/theme";
 
-const rootReducer = combineReducers({ misc, user, loaders, athletes, topDrops, dropTypes, kycStatus, coinList, myCurrencies });
+const rootReducer = combineReducers({ misc, theme, user, loaders, athletes, topDrops, dropTypes, kycStatus, coinList, myCurrencies });
 
 export type RootState = ReturnType<typeof rootReducer>;
 
